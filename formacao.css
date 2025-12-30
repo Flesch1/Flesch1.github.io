@@ -1,0 +1,153 @@
+.formacao {
+  background-color: #212121;
+}
+
+.formacao-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  padding: 100px;
+}
+
+.formacao-container h2 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  margin: 0px;
+  word-break: break-all;
+  max-width: 5ch;
+  color: #000;
+}
+
+.formacao-lista {
+  display: flex;
+  gap: 50px;
+  margin-top: 80px;
+}
+
+.formacao-tipos {
+  background-color: #000000;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  height: 200px;
+  position: relative;
+}
+
+.formacao-tipos h4 {
+  font-size: 1.125rem;
+  color: #fff;
+}
+
+.formacao-tipos span {
+  color: #aeaeae;
+  font-size: 0.875rem;
+}
+
+.formacao-tipos p {
+  color: #aeaeae;
+  font-size: 0.875rem;
+}
+
+.formacao-texto {
+  max-width: 50ch;
+  color: #aeaeae;
+  line-height: 1.5;
+  font-size: 1.25rem;
+}
+
+.formacao-texto strong {
+  color: #fff;
+}
+
+.formacao-tipos span::before {
+  content: "";
+  width: 4px;
+  height: 16px;
+  background-image: url(./retangulo.svg);
+  position: absolute;
+  left: -4px;
+}
+
+.cursos {
+  margin-top: 100px;
+  color: #fff;
+  background-color: #000;
+  padding: 20px 20px;
+}
+
+.cursos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.cursos-horas {
+  text-align: right;
+  color: #aeaeae;
+}
+
+.cursos-intensivos {
+  color: #aeaeae;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.idiomas {
+  text-align: right;
+  color: #aeaeae;
+}
+
+.cursos::before {
+  content: "";
+  height: 142px;
+  width: 4px;
+  background: linear-gradient(#afb3ff, #3940d3);
+  position: absolute;
+  left: -4px;
+  top: 0px;
+}
+
+.estilo {
+  position: relative;
+}
+
+@media (max-width: 800px) {
+  .formacao-lista {
+    flex: 1;
+  }
+  .formacao-tipos span {
+    text-align: center;
+  }
+
+  .formacao-tipos h4 {
+    text-align: center;
+  }
+  .formacao-tipos p {
+    text-align: center;
+  }
+
+  .cursos-tipos {
+    font-size: 0.75rem;
+  }
+  .formacao-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .formacao-container h2 {
+    max-width: initial;
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: white;
+  }
+
+  .formacao-container {
+    padding: 50px;
+  }
+}

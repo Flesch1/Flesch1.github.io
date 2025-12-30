@@ -1,0 +1,50 @@
+.footer {
+  background-color: #000;
+  position: relative;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  padding: 100px;
+}
+
+.footer-text {
+  color: #aeaeae;
+  font-size: 1.5rem;
+  max-width: 40ch;
+  align-self: center;
+}
+.footer-lista {
+  color: white;
+}
+
+.footer-lista li {
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+.direitos {
+  grid-column: 1 / 3;
+  justify-self: center;
+  color: #aeaeae;
+  font-size: 1.5rem;
+  max-width: 40ch;
+}
+
+.footer-container::before {
+  content: "";
+  width: 97px;
+  height: 100px;
+  background-image: url(./Deco.svg);
+  position: absolute;
+  top: -50px;
+  left: 100px;
+}
+
+
+
+

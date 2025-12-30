@@ -1,0 +1,102 @@
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  margin-top: 100px;
+}
+
+.main-text {
+  max-width: 50ch;
+  font-size: 1.25rem;
+  margin-bottom: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.exp {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+.main-exp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 50px;
+  background-color: #f2f2f2;
+  padding: 1.25rem;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.main h2 {
+  margin: 0px;
+  word-break: break-all;
+  max-width: 5ch;
+}
+
+.main-exp span {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: end;
+  text-align: center;
+}
+
+.main-exp h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.main-descricao {
+  font-size: 0.75rem;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-lista {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-lista li {
+  background-color: #e2e2e2;
+  place-self: start;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.main-exp::before {
+  content: "";
+  width: 4px;
+  height: 16px;
+  background-image: url(./retangulo.svg);
+  position: absolute;
+  top: 24px;
+  left: -4px;
+}
+
+@media (max-width: 800px) {
+  .main {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .main h2 {
+    font-size: 3rem;
+    max-width: initial;
+    text-transform: capitalize;
+  }
+  .main-exp::before {
+    content: "";
+    width: 4px;
+    height: 16px;
+    background-image: url(./retangulo.svg);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+}

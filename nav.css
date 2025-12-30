@@ -1,0 +1,48 @@
+.nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.nav-descricao {
+  align-content: center;
+  position: relative;
+}
+
+.nav-descricao h1 {
+  font-size: 4.5rem;
+}
+
+.nav-descricao p {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 800px) {
+  .nav {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .nav-descricao h1 {
+    font-size: 3rem;
+  }
+}
+
+.nav-descricao h1::before {
+  content: "";
+  width: 97px;
+  height: 100px;
+  background-image: url(./Deco.svg);
+  position: absolute;
+  z-index: -1;
+  left: -22px;
+  top: 180px;
+}
+
+@media (max-width: 1200px) {
+  .nav-descricao h1::before {
+    display: none;
+  }
+}
