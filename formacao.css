@@ -150,4 +150,8 @@
   .formacao-container {
     padding: 50px;
   }
+
+  .formacao-container {
+    margin: 0 auto;
+  }
 }

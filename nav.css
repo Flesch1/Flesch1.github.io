@@ -45,4 +45,7 @@
   .nav-descricao h1::before {
     display: none;
   }
+  .nav {
+    margin: 0 auto;
+  }
 }

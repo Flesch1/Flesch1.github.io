@@ -99,4 +99,8 @@
     top: 0px;
     left: 0px;
   }
+
+  .main {
+    margin: 0 auto;
+  }
 }
